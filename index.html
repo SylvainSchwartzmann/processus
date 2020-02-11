@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="Description" content="Site de recettes pour étudiant">
+		<title>Recettes fauchées</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" media="screen and (min-width: 1000px)" href="styles/ordi.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+		<style>
+			
+		</style>
+	</head>
+	<body>
+        <header id="header">
+            <p><strong>Envie de gouter à des nouvelles recettes équilibrées et pas chères ?<br>Alors tu es au bon endroit !</strong></p>
+            <a class="bouton" href="#info">&#8659;</a>
+        </header>
+       
+        <section id="info">
+            <p>Marre de toujours manger la même chose pour limiter ton budget ?<br> Ici tu trouveras des nouvelles recettes afin de pouvoir te faire plaisir mais à petit prix.<br>Des entrées, des repas et même des desserts !</p>
+            <p>Dès que tu vois une recette qui te plaît clique sur l'image afin de voir les ingrédients, la préparation et une vidéo qui te montre comment la faire.</p>
+        </section> 
+        <nav>
+            <ul>
+                <li><a href="#entree">Entrée</a></li>
+                <li><a href="#repas">Repas</a></li>
+                <li><a href="#dessert">Dessert</a></li>
+            </ul>
+        </nav>
+        <section id="entree">
+            <p> <strong>Les entrées</strong></p>
+            <div class="grid">
+                <p>Croque monsieur mozzarela, avocat, tomates</p>
+                <a href="croque.html"><img alt="image" src="img/croque.jpg"></a>
+            </div>
+        </section>
+
+        <section id="repas">
+            <p><strong>Les repas</strong></p>
+            <div class="grid">
+                <p>Pizza à la poêle</p>
+                <a href="pizza.html"><img alt="image" src="img/pizza.jpg"></a>
+            <div class="espace"></div>
+            <div class="espace"></div>
+                <p>Quesadilas</p>
+                <a href="quesadilas.html"><img alt="image" src="img/quesadilas.png"></a>
+            </div>
+        </section>
+
+        <section id="dessert">
+            <p><strong>Les desserts</strong></p>
+            <div class="grid">
+                <p>Pancakes au chocolat</p>
+                <a href="pancakes.html"><img alt="image" src="img/pancakes.jpg"></a>
+            </div>
+        </section>
+        <footer>
+            <div id="logo"></div> 
+            <div id="perso">
+              <div id="credit">
+                <p>Credit 2020 - Recettes fauchées<br>
+                  <a href="#header">Retourner en haut </a>
+                </p>
+              </div>
+      
+            </div>
+          </footer>
+		<script>
+        function registerServiceWorker() {
+        // enregistre le script sw avec les navigateurs qui le gèrent
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js', { scope: 'https://sylvainschwartzmann.github.io/ptut/' }).then(() => {
+            console.log('Service Worker enregistré correctement.');
+            }).catch(error => {
+            console.log('Erreur lors de l''enregistrement du Service Worker : ', error);
+            });
+        }
+        }
+		</script>
+	</body>
+</html>

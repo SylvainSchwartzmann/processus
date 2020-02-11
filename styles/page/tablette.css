@@ -1,0 +1,15 @@
+iframe{
+    width:80%; 
+    height:350px;
+}
+img{
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+li{
+    font-size: 20px;
+}
+h2{
+    font-size: 25px;
+}

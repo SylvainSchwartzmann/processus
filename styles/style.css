@@ -1,0 +1,174 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #E6C79C;
+}
+/* Page d'intro */
+header{
+    background-image: url("../img/fond1.png");
+    height: 100vh;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+header>p{
+    font-size: 35px;
+    margin: auto;
+    /* color: #34414c; */
+    text-align: center;
+    color: black;
+    animation: app 1.8s ;
+    animation-delay: -0.2s;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-shadow: white 0.1em 0.1em 0.2em
+}
+@keyframes app{
+    0% { opacity:0%;}
+    100% {opacity:100%;}
+}
+.bouton{
+    color: #ff6347; 
+    position: absolute;
+    top: 75%;
+    left: 41%;
+    font-size: 750%;
+    animation: animate ease-in-out alternate infinite 0.8s ; 
+}
+a{
+    text-decoration: none;
+}
+@keyframes animate{
+    0% {transform: translateY(-30px);}
+    100% {transform:translateY(0);}
+}
+/* Le menu */
+nav{
+    position: sticky;
+    top: 0;
+    background-image: radial-gradient(circle, #A1CF6B, green);
+    box-shadow: 0px 10px 5px 0px #656565;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 0px;
+}
+ul>li>a{
+    color: black;
+}
+ul>li{
+    list-style: none;
+    font-size: 20px;
+}
+#info{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#info>p{
+   font-size: 25px;
+   text-align: center;
+}
+
+/* Zone pour les entrées */
+
+#entree>p:first-child{
+    background-color: #7AC74F;
+    padding: 10px;
+    font-size: 25px;
+}
+#entree p{
+    color: #1e366d;
+    text-align: center;
+}
+div>p{
+    font-size: 19px;
+}
+div>a>img{
+    width: 70%;   
+}
+div>a{
+    display: flex;
+    justify-content: center;
+}
+
+/* Zone pour les repas */
+
+#repas>p:first-child{
+    background-color: #7AC74F;
+    padding: 10px;
+    
+    font-size: 25px;
+}
+#repas p{
+    text-align: center;
+    color: #1e366d;
+}
+
+/* Zone pour les desserts */
+
+#dessert>p:first-child{
+    background-color: #7AC74F;
+    padding: 10px;
+    font-size: 25px;
+}
+#dessert p{
+    text-align: center;
+    color: #1e366d;
+}
+
+/* Footer */
+
+footer{
+    background-color: #2C2C2C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+
+}
+footer #perso {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer #credit{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 40px;
+    
+    color: #BABABA;
+    margin-left: 0px;
+    text-align: center;
+}
+#credit>p>a{
+    text-decoration: none;
+    color: #BABABA;
+    font-size: 14px;
+}
+#credit>p{
+    font-size: 14px;
+}
+footer{
+    background-color: #2C2C2C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+footer #logo{
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+}
