@@ -7,10 +7,10 @@
 		<title>Recettes fauchées</title>
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" media="screen and (min-width: 1000px)" href="styles/ordi.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest.json">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
@@ -74,16 +74,7 @@
             </div>
           </footer>
 		<script>
-        function registerServiceWorker() {
-        // enregistre le script sw avec les navigateurs qui le gèrent
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js', { scope: 'https://sylvainschwartzmann.github.io/processus/' }).then(() => {
-            console.log('Service Worker enregistré correctement.');
-            }).catch(error => {
-            console.log('Erreur lors de l''enregistrement du Service Worker : ', error);
-            });
-        }
-        }
+        
 		</script>
 	</body>
 </html>
